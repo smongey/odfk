@@ -1,0 +1,12 @@
+.DS_Store
+/site/accounts
+/assets/avatars
+/thumbs/*
+
+/content/
+/frontend/
+/kirby/
+/panel/
+
+license.md
+readme.md
