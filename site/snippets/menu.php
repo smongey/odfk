@@ -12,7 +12,7 @@
 
 
     <nav class="menu">
-      <ul class="lang">
+      <ul class="lang" style="display: none;">
         <li><a href="#no" class="active">No</a></li>
         <li><a href="#en">En</a></li>
       </ul>

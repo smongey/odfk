@@ -41,30 +41,31 @@
 			$small = thumb($page->image($page->aboutpic1()), array('width' => 480));
 			?>
               <picture>
-                <source media="(max-width: 480px)"
+                <!-- <source media="(max-width: 480px)"
                 srcset="<?php echo $small->url(); ?> 1x, <?php echo $img->url(); ?> 2x">
-                <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
+                <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>"> -->
                 <img src="<?php echo $img->url(); ?>" alt="">
               </picture>
 
             </div>
 
             <div class="half anim">
-			<?php $img = $page->image($page->aboutpic2()); ?>
+      			<?php $img = $page->image($page->aboutpic2()); ?>
               <picture>
-                <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, <?php echo $img->url(); ?> 2x">
-                <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
+                <!-- <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, <?php echo $img->url(); ?> 2x">
+                <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>"> -->
                 <img src="<?php echo $img->url(); ?>" alt="Some image">
               </picture>
 
             </div>
 
-
+            
+            <?php $img = $page->image($page->aboutpic3()); ?>
             <picture>
-              <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/900x900/f2f2f2 2x">
+              <!-- <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/900x900/f2f2f2 2x">
               <source media="(max-width: 900px)" srcset="http://placehold.it/900x900/f2f2f2">
-              <source media="(max-width: 1200px)" srcset="http://placehold.it/1600x855/f2f2f2">
-              <img class="anim" src="http://placehold.it/1600x855/f2f2f2" alt="Some image">
+              <source media="(max-width: 1200px)" srcset="http://placehold.it/1600x855/f2f2f2"> -->
+              <img class="anim" src="<?php echo $img->url(); ?>" alt="Some image">
             </picture>
 
           </div>
@@ -147,16 +148,20 @@
           <div class="full anim">
             <div class="exhibit">
               <div class="info">
-                <h3>Vil du stille ut på Oslo Design Fair?<br/><br/>Finn mer informasjon på vår påmeldingsside</h3>
-                <a href="#" class="become">Bli utstiller <span>&rarr;</span></a>
+                <h3><?php echo $page->becometext(); ?></h3>
+                <a href="<?php echo $page->becomelink(); ?>" class="become">Bli utstiller <span>&rarr;</span></a>
               </div>
               <div class="image">
 
 
                 <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/700x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/800x760/f2f2f2">
-                  <img src="http://placehold.it/800x760" alt="">
+                  <!-- <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/700x700/f2f2f2 2x">
+                  <source media="(max-width: 1200px)" srcset="http://placehold.it/800x760/f2f2f2"> -->
+                  
+                  <?php 
+
+                  $become = $page->image($page->becomepic()); ?>
+                  <img src="<?php echo $become->url() ?>" alt="">
                 </picture>
 
               </div>

@@ -3,11 +3,10 @@
               <a href="<?php echo $entry->url() ?>">
 
                 <picture>
-                <?php if($image = $entry->images()->sortBy('sort', 'asc')->first()): ?>
                   <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
                   <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <img src="<?php echo $image->url() ?>" alt="<?php echo $entry->title()->html() ?>">
-                <?php endif ?>
+                  <?php $i = $entry->image($entry->thumbnail()) ?>
+                  <img src="<?php echo $i->url() ?>" alt="<?php echo $entry->title()->html() ?>">
                 </picture>
 
                 <div class="info">

@@ -44,6 +44,7 @@
           <div class="full hold anim">
             <div class="text">
 		      <?php echo $page->text()->kirbytext() ?>
+		      <a href="#" class="front"><span>&larr;</span> Til Forsiden</a>
             </div>
           </div>
 

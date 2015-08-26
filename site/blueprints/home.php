@@ -70,12 +70,6 @@ fields:
     label: Become Exhibitor Link
     type: text
 
-  teampic:
-    label: Become Exhibitor Image
-    type: select
-    options: images
-    help: (1600x855)
-
   team:
     label: Team
     type: structure
