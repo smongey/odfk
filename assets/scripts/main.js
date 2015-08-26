@@ -42,18 +42,8 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 
 
 // Ajax Stuff
-}).on('click', '.profile a, .logo, a.front', function(e){
+}).on('click', '.profile a', function(e){
 
-/* 
-when article thumb is clicked
-	scroll to top
-	fade out current page contents
-
-	ajax load contents of desired page
-	loop through contents and remove hold class
-	pushstate url
-	back button should work
-*/
 
 	e.preventDefault();
 
@@ -61,6 +51,28 @@ when article thumb is clicked
 		segment = url[url.length - 1],
 		contents = segment + ' #wrap > *';
 	l(segment);
+	$('#wrap > *').addClass('hold');
+	$('html, body').animate({
+		scrollTop: 0
+	}, 1000, 'easeInOutQuint');
+	history.pushState({}, '', $(this).attr("href"));
+	setTimeout(function(){
+    	$('header').addClass('hidden');
+		$('#wrap > *').remove();
+		$('#wrap').load(contents, function(){
+			setTimeout(function(){
+				odf.fadeInSeq();
+				initMap();
+			}, 0);
+		});
+	}, 1000);
+
+}).on('click', '.logo, a.front', function(e){
+
+	e.preventDefault();
+
+	var contents = '/ #wrap > *';
+	l(contents);
 	$('#wrap > *').addClass('hold');
 	$('html, body').animate({
 		scrollTop: 0
