@@ -22,7 +22,9 @@
     </script>
 
     <script src="<?php echo url() ?>/assets/scripts/vendor.js"></script>
-
-        <script src="<?php echo url() ?>/assets/scripts/main.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrQ7GK_GWWWMLrsajUtW5b2kYyS9J-CTw&callback=initMap">
+    </script>
+    <script src="<?php echo url() ?>/assets/scripts/main.js"></script>
 </body>
 </html>

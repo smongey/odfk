@@ -1,9 +1,3 @@
-<!-- <h1><?php //echo $page->title()->html() ?></h1>
-<?php //echo $page->text()->kirbytext() ?>
- -->
-
-
-
 <?php snippet('header') ?>
 
 		<?php $img = $page->image($page->mainpic()); ?>
@@ -83,69 +77,9 @@
             <h2>Siste nyheter</h2>
           </div>
           <div class="full">
-            <div class="half profile anim">
-              <a href="article.html">
 
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <img src="http://placehold.it/760x700/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Intervju med Kreativ leder Andreas Engesvik</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
-            
-            <div class="half profile anim">
-              <a href="article1.html">
-
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <img src="http://placehold.it/760x700/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Intervju med Kreativ</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
-            
-            <div class="half profile anim">
-              <a href="article2.html">
-
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <img src="http://placehold.it/760x700/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Intervju med Kreativ leder Andreas Engesvik </p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
-            
-            <div class="half profile anim">
-              <a href="article3.html">
-  
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <img src="http://placehold.it/760x700/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Intervju med Kreativ leder Andreas Engesvik</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>     
+            <?php snippet('news') ?>
+             
           </div>
         </section>
 
@@ -238,109 +172,25 @@
           </div>
 
           <div class="full">
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
+
+          <?php $team = yaml($page->team()); ?>
+          <?php foreach($team as $person): ?>
 
             <div class="third anim">
               <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
+                <p><?php echo $person["name"] ?><br/>
+                <?php echo $person["role"] ?></p>
+                <a href="tel:<?php echo $person["phone"] ?>"><?php echo $person["phone"] ?></a> 
+                <a href="mailto:<?php echo $person["email"] ?>"><?php echo $person["email"] ?></a>
                 </p>
               </div>
               <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
+                <img src="<?php echo $page->image($person["profile"])->url() ?>" alt="">
               </div>
             </div>
+            
+          <?php endforeach; ?>
 
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image anim">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
-
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
-
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
-
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>          
-
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
-
-            <div class="third anim">
-              <div class="info">
-                <p>Dagny Thurmann Moe<br/>
-                Kreativ leder og rådgiver</p>
-                <a href="#">+47 404 54 585</a> 
-                <a href="#">dtm@oslodesignfair.no</a>
-                </p>
-              </div>
-              <div class="image">
-                <img src="http://placehold.it/130x150" alt="">
-              </div>
-            </div>
           </div>
         </section>
 
@@ -356,7 +206,7 @@
                   <li>Oslo<br/>Design Fair</li>
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
-                  <li>odf@messe.no</li>
+                  <li>post@oslodesignfair.no</li>
                 </ul>
               </div>
               <div class="third anim">
@@ -364,7 +214,7 @@
                   <li>Norges<br/>Varemesse</li>
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
-                  <li>odf@messe.no</li>
+                  <li>nv@messe.no</li>
                 </ul>
               </div>
 

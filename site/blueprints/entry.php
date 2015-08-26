@@ -14,7 +14,7 @@ fields:
     options: images
     width: 1/2
     help: 760x760
-  date:
+  entrydate:
     label: Date
     type:  text
     width: 1/2
