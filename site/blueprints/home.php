@@ -44,7 +44,7 @@ fields:
     label: Areas
     type: structure
     entry: >
-      <img src="<?php echo $site->url() ?>/content/1-home/{{areapic}}" alt=""></br>
+      <img src="../content/1-home/{{areapic}}" alt=""></br>
       {{areatitle}}
     fields:
       areapic:
@@ -76,7 +76,7 @@ fields:
     entry: >
       <strong>Name: </strong><i>{{name}}</i></br>
       <strong>Role: </strong><i>{{role}}</i></br>
-      <strong>Image: </strong><br/><img src="<?php echo $site->url() ?>/content/1-home/{{profile}}" alt=""></br>
+      <strong>Image: </strong><br/><img src="../content/1-home/{{profile}}" alt=""></br>
       <strong>Phone: </strong><i>{{phone}}</i></br>
       <strong>Email: </strong><i>{{email}}</i></br>
     fields:
