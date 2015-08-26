@@ -159,7 +159,6 @@
                   <source media="(max-width: 1200px)" srcset="http://placehold.it/800x760/f2f2f2"> -->
                   
                   <?php 
-
                   $become = $page->image($page->becomepic()); ?>
                   <img src="<?php echo $become->url() ?>" alt="">
                 </picture>
@@ -233,11 +232,11 @@
                 </ul>
               </div>            
               
-              <div class="full anim">
+              <div class="full anim" style="display: none;">
                 <p>Meld deg på<br/>vårt nyhetsbrev</p>
               </div>
               
-              <div class="full">
+              <div class="full" style="display: none;">
                 <input type="text" placeholder="Skriv inn e-post">
                 <input type="submit" value="Send &rarr;">
               </div>

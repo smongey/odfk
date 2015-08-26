@@ -33,7 +33,7 @@
 
     <div class="cookiemonster loading">
       <div class="full">
-        <p>Ønsker du å stille ut på Oslo Design Fair? Les mer info <a href="#">her</a></p>
+        <p>Ønsker du å stille ut på Oslo Design Fair? Les mer info <a href="https://www.messe.no/no/GaveInterior/ForUtstillere/Standbestilling/">her</a></p>
         <a href="#" class="close">&times;</a>
       </div>
     </div>
