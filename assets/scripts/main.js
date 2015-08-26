@@ -77,7 +77,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 	$('html, body').animate({
 		scrollTop: 0
 	}, 1000, 'easeInOutQuint');
-	history.pushState({}, '', $(this).attr("href"));
+	history.pushState({}, '', '/');
 	setTimeout(function(){
     	$('header').addClass('hidden');
 		$('#wrap > *').remove();
@@ -188,7 +188,7 @@ odf.$w.load(function(){
 		l('doesnt');
 	}
 
-	if(window.location.pathname === "/" || window.location.pathname.indexOf("/news/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
+	if(window.location.pathname === "/" || window.location.pathname.indexOf("/news/") == 0 || window.location.pathname.indexOf("/areas/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			
