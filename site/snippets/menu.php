@@ -19,7 +19,7 @@
       <ul class="nav">
         <li><a href="#om" class="active">Om ODF</a></li>
         <li><a href="#nyheter">Nyheter</a></li>
-        <li><a href="#satningsomrader">Satnings-<br/>omr&aring;der</a></li>
+        <li><a href="#satningsomrader">Satsnings-<br/>omr&aring;der</a></li>
         <li><a href="#bli-utstiller">Bli utstiller</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#kontaktinfo">Kontaktinfo</a></li>

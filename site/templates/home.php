@@ -90,53 +90,9 @@
             <h2>Satsningsområder</h2>
           </div>
           <div class="full">
-            <div class="third anim">
-              <a href="#">
 
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/320x320/f2f2f2 1x, http://placehold.it/480x480/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/480x480/f2f2f2">
-                  <img src="http://placehold.it/480x480/f2f2f2" alt="Some image">
-                </picture>
+            <?php snippet('areas') ?>
 
-                <div class="info">
-                  <p>Tendenser: Trend og tendenser innenfor interiør med mer</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="third anim">
-              <a href="#">
-                
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/320x320/f2f2f2 1x, http://placehold.it/480x480/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/480x480/f2f2f2">
-                  <img src="http://placehold.it/480x480/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Tendenser: Trend og tendenser innenfor interiør med mer</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="third anim">
-              <a href="#">
-                
-                <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/320x320/f2f2f2 1x, http://placehold.it/480x480/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/480x480/f2f2f2">
-                  <img src="http://placehold.it/480x480/f2f2f2" alt="Some image">
-                </picture>
-
-                <div class="info">
-                  <p>Tendenser: Trend og tendenser innenfor interiør med mer</p>
-                  <span href="#" class="more">Les mer</span>
-                </div>
-              </a>
-            </div>
           </div>
         </section>
 

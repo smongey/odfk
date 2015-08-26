@@ -42,7 +42,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 
 
 // Ajax Stuff
-}).on('click', '.profile a', function(e){
+}).on('click', '.profile a, .areas a', function(e){
 
 
 	e.preventDefault();
