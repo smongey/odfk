@@ -61,8 +61,8 @@
 
             
             <?php $img = $page->image($page->aboutpic3());
-            $small = thumb($page->image($page->aboutpic3()), array('width' => 480));
-            $medium = thumb($page->image($page->aboutpic3()), array('width' => 900)); ?>
+            $small = thumb($page->image($page->aboutpic3()), array('width' => 480,'height' => 480, 'crop' => true));
+            $medium = thumb($page->image($page->aboutpic3()), array('width' => 900,'height' => 900, 'crop' => true)); ?>
             <picture>
               <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $medium->url(); ?> 2x">
               <source media="(max-width: 900px)" srcset="<?php echo $medium->url(); ?>">
