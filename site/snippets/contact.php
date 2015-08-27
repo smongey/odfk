@@ -33,11 +33,11 @@
                 </ul>
               </div>            
               
-              <div class="full anim">
+              <div class="full anim" style="display: none;">
                 <p>Meld deg på<br/>vårt nyhetsbrev</p>
               </div>
               
-              <div class="full">
+              <div class="full" style="display: none;">
                 <form id="mailinglist" method="get" action="http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=value">
                   <input type="text" class="email" name="email" placeholder="Skriv inn e-post">
                   <input type="submit" class="send" value="Send &rarr;">
