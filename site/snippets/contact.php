@@ -10,8 +10,7 @@
                   <li>Oslo<br/>Design Fair</li>
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
-                  <li>post@oslodesignfair.no</li>
-                  <li><a href="mailto:post@oslodesignfair.no">e-post</a></li>
+                  <li><a href="mailto:post@oslodesignfair.no">Send e-post</a></li>
                 </ul>
               </div>
               <div class="third anim">
@@ -19,7 +18,7 @@
                   <li>Norges<br/>Varemesse</li>
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
-                  <li>nv@messe.no</li>
+                  <li><a href="mailto:nv@messe.no">Send e-post</a></li>
                 </ul>
               </div>
 

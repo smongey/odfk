@@ -496,12 +496,14 @@ function initMap() {
 		// mapTypeId: google.maps.MapTypeId.SATELLITE
 	});
 	// map.setTilt(45);
-	var image = 'http://oslodesignfair.no/content/1-home/marker.png';
+//	var image = 'http://oslodesignfair.no/content/1-home/marker.png';
+	var image = new google.maps.MarkerImage("http://oslodesignfair.no/content/1-home/map-marker.png", null, null, null, new google.maps.Size(60,60));
 	var beachMarker = new google.maps.Marker({
 		position: {lat: 59.950322, lng: 11.057812},
 		map: map,
 		icon: image
 	});  
+
 }
 
 var mapStyle = [

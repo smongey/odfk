@@ -143,7 +143,7 @@
               <div class="info">
                 <p><?php echo $person["name"] ?><br/>
                 <?php echo $person["role"] ?></p>
-                <a href="tel:<?php echo $person["phone"] ?>"><?php echo $person["phone"] ?></a> 
+                <a href="tel:<?php echo $person["phone"] ?>"><?php echo $person["phone"] ?></a><br/> 
                 <a href="mailto:<?php echo $person["email"] ?>"><?php echo $person["email"] ?></a>
                 </p>
               </div>
