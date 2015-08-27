@@ -421,6 +421,11 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	
 } else {
 
+	if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+		console.log('old ie');
+		$('#preloader').hide();
+	}
+
 	l('is not phone');
 	odf.$w.scroll( $.throttle( 100, odf.menuReveal ) );
 

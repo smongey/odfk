@@ -26,7 +26,7 @@
                 <ul>
                   <li>Følg oss<br/><br/></li>
                   <li><a href="http://facebook.com/oslo-design-fair" target="_blank">Facebook</a></li>
-                  <li><a href="https://instagram.com/gaveoginteriormessen/" target="_blank">Instagram</a></li>
+                  <li><a href="https://instagram.com/oslodesignfair" target="_blank">Instagram</a></li>
                   <li>#oslodesignfair</li>
                   <li>@oslodesignfair</li>
                 </ul>
