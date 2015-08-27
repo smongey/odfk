@@ -74,9 +74,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 }).on('click', '.logo, a.front', function(e){
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
-
 		e.preventDefault();
-
 		var contents = '/ #wrap > *';
 		l(contents);
 		$('#wrap > *').addClass('hold');
@@ -94,15 +92,12 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 				}, 0);
 			});
 		}, 1000);
-		
 	}
 
 }).on('click', '.nav li a', function(e) {
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
-
 		e.preventDefault();
-
 		if ( $('section.article').length > 0 ) {
 
 			var url = $(this).context.href.split('#'),
