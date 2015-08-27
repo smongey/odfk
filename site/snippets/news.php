@@ -3,9 +3,14 @@
               <a href="<?php echo $entry->url() ?>">
 
                 <picture>
-                  <source media="(max-width: 480px)" srcset="http://placehold.it/480x480/f2f2f2 1x, http://placehold.it/760x700/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/760x700/f2f2f2">
-                  <?php $i = $entry->image($entry->thumbnail()) ?>
+                 <?php $i = $entry->image($entry->thumbnail());
+                  $small = thumb($i, array('width' => 400));
+                  $medium = thumb($i, array('width' => 900));
+                 ?>
+                  <source media="(max-width: 480px)" srcset="<?php echo $small->url() ?> 1x, <?php echo $medium->url() ?> 2x">
+                  <source media="(max-width: 900px)" srcset="<?php echo $medium->url() ?> 1x, <?php echo $i->url() ?> 2x">
+                  <source media="(max-width: 1200px)" srcset="<?php echo $i->url() ?>">
+                 
                   <img src="<?php echo $i->url() ?>" alt="<?php echo $entry->title()->html() ?>">
                 </picture>
 

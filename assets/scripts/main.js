@@ -110,7 +110,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 		setTimeout(function(){
 	    	$('header').addClass('hidden');
 			$('#wrap > *').remove();
-			$('#wrap').load('index.html #wrap > *', function(){
+			$('#wrap').load('/ #wrap > *', function(){
 				odf.fadeInSeq();
 				initMap();
 				l($(hash));
@@ -401,6 +401,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 	l('is phone');
 
+	$('#preloader').hide();
+
 	odf.$b.bind('touchmove', function(e){
 		
 		odf.menuReveal();
@@ -472,18 +474,24 @@ window.onorientationchange = odf.readDeviceOrientation;
 // Gmaps
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 59.950574, lng: 11.057841},
-	zoom: 16,        
-	zoomControl: false,
-	scaleControl: false,
-	scrollwheel: false,
-	disableDefaultUI: true,
-	styles: mapStyle,
-	draggable: false
-	// mapTypeId: google.maps.MapTypeId.SATELLITE
-  });
-  // map.setTilt(45);
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 59.950501, lng: 11.057839},
+		zoom: 16,        
+		zoomControl: false,
+		scaleControl: false,
+		scrollwheel: false,
+		disableDefaultUI: true,
+		styles: mapStyle,
+		draggable: false
+		// mapTypeId: google.maps.MapTypeId.SATELLITE
+	});
+	// map.setTilt(45);
+	var image = 'http://oslodesignfair.no/content/1-home/marker.png';
+	var beachMarker = new google.maps.Marker({
+		position: {lat: 59.950322, lng: 11.057812},
+		map: map,
+		icon: image
+	});  
 }
 
 var mapStyle = [

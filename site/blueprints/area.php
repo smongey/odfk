@@ -14,11 +14,6 @@ fields:
     options: images
     width: 1/2
     help: 600x600
-  entrydate:
-    label: Date
-    type:  text
-    width: 1/2
-    help: DD.MM.YYYY
   text:
     label: Text
     type:  textarea

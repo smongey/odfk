@@ -3,9 +3,12 @@
               <a href="<?php echo $area->url() ?>">
 
                 <picture>
-                 <!--  <source media="(max-width: 480px)" srcset="http://placehold.it/320x320/f2f2f2 1x, http://placehold.it/480x480/f2f2f2 2x">
-                  <source media="(max-width: 1200px)" srcset="http://placehold.it/480x480/f2f2f2"> -->
-                  <?php $i = $area->image($area->thumbnail()) ?>
+                  <?php $i = $area->image($area->thumbnail());
+                  $small = thumb($i, array('width' => 400));
+                  $medium = thumb($i, array('width' => 700));
+                  ?>
+                  <source media="(max-width: 480px)" srcset="<?php echo $small->url() ?> 1x, <?php echo $medium->url() ?> 2x">
+                  <source media="(max-width: 900px)" srcset="<?php echo $medium->url() ?>">
                   <img src="<?php echo $i->url() ?>" alt="<?php echo $area->title()->html() ?>">
                 </picture>
 
@@ -16,4 +19,3 @@
               </a>
             </div>
             <?php endforeach ?>
-           
