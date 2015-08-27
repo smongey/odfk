@@ -172,6 +172,16 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 		scrollTop: $('section.about').offset().top
 	}, 800, 'easeInOutQuint');
 
+}).on('click', 'input.send', function(e){
+	// e.preventDefault();
+	// var url = 'http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=',
+	// 	email = $('input.email').val(),
+	// 	request = url + email;
+
+	// $.post( request, $('form#mailinglist').serialize(), function(data) {
+	// 	console.log(data);
+	// }, 'json' );
+
 });
 
 
@@ -506,3 +516,8 @@ var mapStyle = [
     ]
   }
 ];
+
+
+
+
+

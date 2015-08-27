@@ -11,6 +11,7 @@
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
                   <li>post@oslodesignfair.no</li>
+                  <li><a href="mailto:post@oslodesignfair.no">e-post</a></li>
                 </ul>
               </div>
               <div class="third anim">
@@ -32,13 +33,18 @@
                 </ul>
               </div>            
               
-              <div class="full anim" style="display: none;">
+              <div class="full anim">
                 <p>Meld deg på<br/>vårt nyhetsbrev</p>
               </div>
               
-              <div class="full" style="display: none;">
-                <input type="text" placeholder="Skriv inn e-post">
-                <input type="submit" value="Send &rarr;">
+              <div class="full">
+                <form id="mailinglist" method="get" action="http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=value">
+                  <input type="text" class="email" name="email" placeholder="Skriv inn e-post">
+                  <input type="submit" class="send" value="Send &rarr;">
+                </form>
+                <div style="display: none;">
+                  <p>Thanks for signing up!</p>
+                </div>
               </div>
             </div>
           </div>
