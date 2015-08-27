@@ -1,4 +1,4 @@
-            <?php foreach(page('areas')->children()->visible()->limit(3) as $area): ?>
+            <?php foreach(page('satsningsomraader')->children()->visible()->limit(3) as $area): ?>
             <div class="third anim">
               <a href="<?php echo $area->url() ?>">
 
