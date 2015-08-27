@@ -45,94 +45,106 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 }).on('click', '.profile a, .areas a', function(e){
 
 
-	e.preventDefault();
+	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
 
-	var url = $(this).context.href.split('/'),
-		segment = url[url.length - 1],
-		contents = segment + ' #wrap > *';
-	l(segment);
-	$('#wrap > *').addClass('hold');
-	$('html, body').animate({
-		scrollTop: 0
-	}, 1000, 'easeInOutQuint');
-	history.pushState({}, '', $(this).attr("href"));
-	setTimeout(function(){
-    	$('header').addClass('hidden');
-		$('#wrap > *').remove();
-		$('#wrap').load(contents, function(){
-			setTimeout(function(){
-				odf.fadeInSeq();
-				initMap();
-			}, 0);
-		});
-	}, 1000);
+		e.preventDefault();
 
-}).on('click', '.logo, a.front', function(e){
-
-	e.preventDefault();
-
-	var contents = '/ #wrap > *';
-	l(contents);
-	$('#wrap > *').addClass('hold');
-	$('html, body').animate({
-		scrollTop: 0
-	}, 1000, 'easeInOutQuint');
-	history.pushState({}, '', '/');
-	setTimeout(function(){
-    	$('header').addClass('hidden');
-		$('#wrap > *').remove();
-		$('#wrap').load(contents, function(){
-			setTimeout(function(){
-				odf.fadeInSeq();
-				initMap();
-			}, 0);
-		});
-	}, 1000);
-
-}).on('click', '.nav li a', function(e) {
-
-	e.preventDefault();
-
-	if ( $('section.article').length > 0 ) {
-
-		var url = $(this).context.href.split('#'),
-			anchor = url[url.length - 1];
-			hash = '#' + anchor;
-		l(anchor);
-		
+		var url = $(this).context.href.split('/'),
+			segment = url[url.length - 1],
+			contents = segment + ' #wrap > *';
+		l(segment);
 		$('#wrap > *').addClass('hold');
 		$('html, body').animate({
 			scrollTop: 0
 		}, 1000, 'easeInOutQuint');
-		odf.animMenuItems(false);
-		
-		// history.pushState({}, '', $(this).attr("href"));
+		history.pushState({}, '', $(this).attr("href"));
 		setTimeout(function(){
 	    	$('header').addClass('hidden');
 			$('#wrap > *').remove();
-			$('#wrap').load('/ #wrap > *', function(){
-				odf.fadeInSeq();
-				initMap();
-				l($(hash));
+			$('#wrap').load(contents, function(){
 				setTimeout(function(){
-					history.pushState({}, '', '/');
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 1500, 'easeInOutQuint');
-				}, 500);
+					odf.fadeInSeq();
+					initMap();
+				}, 0);
 			});
-		}, 1000);		
+		}, 1000);
 
+	}
 
-	} else {
+}).on('click', '.logo, a.front', function(e){
 
-		var hash = $(this).context.hash,
-	  	selector = '.nav li a[href='+ hash +']',
-	  	honk = $(hash).offset().top;
-		odf.animMenuItems(false);
+	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
+
+		e.preventDefault();
+
+		var contents = '/ #wrap > *';
+		l(contents);
+		$('#wrap > *').addClass('hold');
 		$('html, body').animate({
-			scrollTop: honk - 0
-		}, 1500, 'easeInOutQuint');
+			scrollTop: 0
+		}, 1000, 'easeInOutQuint');
+		history.pushState({}, '', '/');
+		setTimeout(function(){
+	    	$('header').addClass('hidden');
+			$('#wrap > *').remove();
+			$('#wrap').load(contents, function(){
+				setTimeout(function(){
+					odf.fadeInSeq();
+					initMap();
+				}, 0);
+			});
+		}, 1000);
+		
+	}
+
+}).on('click', '.nav li a', function(e) {
+
+	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
+
+		e.preventDefault();
+
+		if ( $('section.article').length > 0 ) {
+
+			var url = $(this).context.href.split('#'),
+				anchor = url[url.length - 1];
+				hash = '#' + anchor;
+			l(anchor);
+			
+			$('#wrap > *').addClass('hold');
+			$('html, body').animate({
+				scrollTop: 0
+			}, 1000, 'easeInOutQuint');
+			odf.animMenuItems(false);
+			
+			// history.pushState({}, '', $(this).attr("href"));
+			setTimeout(function(){
+		    	$('header').addClass('hidden');
+				$('#wrap > *').remove();
+				$('#wrap').load('/ #wrap > *', function(){
+					odf.fadeInSeq();
+					initMap();
+					l($(hash));
+					setTimeout(function(){
+						history.pushState({}, '', '/');
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 1500, 'easeInOutQuint');
+					}, 500);
+				});
+			}, 1000);		
+
+
+		} else {
+
+			var hash = $(this).context.hash,
+		  	selector = '.nav li a[href='+ hash +']',
+		  	honk = $(hash).offset().top;
+			odf.animMenuItems(false);
+			$('html, body').animate({
+				scrollTop: honk - 0
+			}, 1500, 'easeInOutQuint');
+
+		}
 
 	}
 
@@ -422,8 +434,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
 
 	if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+
 		console.log('old ie');
 		$('#preloader').hide();
+
 	} else {
 
 		l('is not phone');
