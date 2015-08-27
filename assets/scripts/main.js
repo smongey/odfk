@@ -199,13 +199,13 @@ odf.$w.load(function(){
 
 	l(window.location.pathname);
 
-	if ( window.location.pathname.indexOf("/news/") == 0) {
+	if ( window.location.pathname.indexOf("/news/") == 0 ||  window.location.pathname.indexOf("/nyheter/") == 0) {
 		l('does');
 	} else {
 		l('doesnt');
 	}
 
-	if(window.location.pathname === "/" || window.location.pathname.indexOf("/news/") == 0 || window.location.pathname.indexOf("/areas/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
+	if(window.location.pathname === "/" || window.location.pathname.indexOf("/news/") == 0 || window.location.pathname.indexOf("/nyheter/") == 0 || window.location.pathname.indexOf("/areas/") == 0 || window.location.pathname.indexOf("/satsningsomraader/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			
