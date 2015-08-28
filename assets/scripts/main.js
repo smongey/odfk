@@ -180,7 +180,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 	}, 800, 'easeInOutQuint');
 
 }).on('click', 'input.send', function(e){
-	// e.preventDefault();
+	e.preventDefault();
 	// var url = 'http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=',
 	// 	email = $('input.email').val(),
 	// 	request = url + email;
@@ -266,6 +266,26 @@ odf.$d.keypress(function (e) {
     	$('.grid').toggleClass('active');
     	console.log('triggered');
     }
+});
+
+
+$('input.send').on('click', function(e){
+	e.preventDefault();
+	// var email = $('input.email').val(),
+	// 	url = "http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=" + email;
+	// $(this).attr("action", url);
+	// return true;
+	var email = 'http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=' + $('input.email').val();
+	console.log(email);
+
+	var popup = window.open(email, 'Email Signup');
+	popup.blur();
+	window.focus();
+	$('input.send, input.email').fadeOut(300)
+	$('.notice').fadeIn(300);
+	setTimeout(function(){
+		popup.close();
+	}, 1000);
 });
 
 

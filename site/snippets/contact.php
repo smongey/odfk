@@ -32,18 +32,19 @@
                 </ul>
               </div>            
               
-              <div class="full anim" style="display: none;">
+              <div class="full anim">
                 <p>Meld deg på<br/>vårt nyhetsbrev</p>
               </div>
               
-              <div class="full" style="display: none;">
-                <form id="mailinglist" method="get" action="http://portal.oculosdialog.com/nvm/xtern/seleksjon/?id=690&psw=epeg724&grp=112&email=value">
+              <div class="full">
+                <!-- <form id="mailinglist" action="" method="post"> -->
                   <input type="text" class="email" name="email" placeholder="Skriv inn e-post">
                   <input type="submit" class="send" value="Send &rarr;">
-                </form>
-                <div style="display: none;">
-                  <p>Thanks for signing up!</p>
+                <!-- </form> -->
+                <div class="notice" style="display: none;">
+                  <p>Takk for at du registrerer deg!</p>
                 </div>
+
               </div>
             </div>
           </div>
