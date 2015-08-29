@@ -18,7 +18,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-66824107-1');ga('send','pageview');
+      ga('create','UA-9162258-6');ga('send','pageview');
     </script>
 
     <script src="<?php echo url() ?>/assets/scripts/vendor.js"></script>
