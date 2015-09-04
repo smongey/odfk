@@ -18,7 +18,7 @@
                   <li>Norges<br/>Varemesse</li>
                   <li>Postboks 75, 2001 Lillestrøm</li>
                   <li>+47 66 93 91 00</li>
-                  <li><a href="mailto:nv@messe.no">Send e-post</a></li>
+                  <li><a href="mailto:sl@messe.no">Send e-post</a></li>
                 </ul>
               </div>
 
