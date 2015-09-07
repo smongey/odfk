@@ -59,7 +59,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 					initMap();
 				}, 0);
 			});
-		}, 1000);
+		}, 500);
 
 	}
 
@@ -91,7 +91,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 					initMap();
 				}, 0);
 			});
-		}, 1000);
+		}, 500);
 	}
 
 }).on('click', '.nav li a', function(e) {
@@ -134,7 +134,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 						}, 1500, 'easeInOutQuint');
 					}, 500);
 				});
-			}, 1000);		
+			}, 500);		
 
 
 		} else {
@@ -170,7 +170,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 					initMap();
 				}, 0);
 			});
-		}, 1000);
+		}, 500);
 	}
 
 }).on('click', 'a.totop', function(e){
@@ -208,17 +208,17 @@ odf.$w.load(function(){
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			
-		}, 1200);
+		}, 700);
 
 		setTimeout(function(){
 			// $('#preloader').addClass('out');
 			odf.fadeInSeq();
 			$('.loading').removeClass('loading');
-		}, 1200);
+		}, 700);
 
 		setTimeout(function(){
 			$('#preloader').remove();
-		}, 2000);	
+		}, 1000);	
 
 	} else {
 
