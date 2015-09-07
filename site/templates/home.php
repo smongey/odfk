@@ -7,7 +7,7 @@
               <a href="#" class="logo">Oslo<br/>Design<br/>Fair</a>
             </div>
             <div class="sixth hold">
-              <p class="details">28.01<span>&rarr;</span>31.01,<br/>2016. Norges<br/>Varemesse.</p>
+              <p class="details">28.01<span>&rarr;</span>31.01,<br/>2016. <?php echo l::get('trade-fairs'); ?></p>
             </div>
             <div class="burger hold">
               <span></span>
@@ -18,7 +18,7 @@
 
           <div class="full hero hold">
             <h1><?php echo $page->maintext(); ?></h1>
-            <a href="#" class="more">Les mer <span>&darr;</span></a>
+            <a href="#" class="more"><?php echo l::get('more') ?> <span>&darr;</span></a>
           </div>
 
         </section>
@@ -27,7 +27,7 @@
         <section class="about scroll-section" id="om">
           <div class="full text">
             <div class="half anim">
-              <h2>Om Oslo<br/>Design Fair</h2>
+              <h2><?php echo l::get('title-about') ?></h2>
             </div>
 
             <div class="half anim">
@@ -54,7 +54,7 @@
               <picture>
                 <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $img->url(); ?> 2x">
                 <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
-                <img src="<?php echo $img->url(); ?>" alt="Some image">
+                <img src="<?php echo $img->url(); ?>">
               </picture>
 
             </div>
@@ -67,7 +67,7 @@
               <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $medium->url(); ?> 2x">
               <source media="(max-width: 900px)" srcset="<?php echo $medium->url(); ?>">
               <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
-              <img class="anim" src="<?php echo $img->url(); ?>" alt="Some image">
+              <img class="anim" src="<?php echo $img->url(); ?>">
             </picture>
 
           </div>
@@ -77,7 +77,7 @@
 
         <section class="news scroll-section" id="nyheter">
           <div class="full anim">
-            <h2>Siste nyheter</h2>
+            <h2><?php echo l::get('title-news') ?></h2>
           </div>
           <div class="full">
 
@@ -89,7 +89,7 @@
 
         <section class="areas scroll-section" id="satningsomrader">
           <div class="full anim">
-            <h2>Satsningsområder</h2>
+            <h2><?php echo l::get('title-areas') ?></h2>
           </div>
           <div class="full">
 
@@ -101,16 +101,15 @@
 
         <section class="exhibitor scroll-section"  id="bli-utstiller">
           <div class="full anim">
-            <h2>Bli utstiller</h2>
+            <h2><?php echo l::get('title-become') ?></h2>
           </div>
           <div class="full anim">
             <div class="exhibit">
               <div class="info">
                 <h3><?php echo $page->becometext(); ?></h3>
-                <a href="<?php echo $page->becomelink(); ?>" target="_blank" class="become">Bli utstiller <span>&rarr;</span></a>
+                <a href="<?php echo $page->becomelink(); ?>" target="_blank" class="become"><?php echo l::get('title-become') ?> <span>&rarr;</span></a>
               </div>
               <div class="image">
-
 
                 <picture>
                 <?php $become = $page->image($page->becomepic());
@@ -119,7 +118,7 @@
                   <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $medium->url(); ?> 2x">
                   <source media="(max-width: 800px)" srcset="<?php echo $medium->url(); ?>">
                   <source media="(max-width: 1200px)" srcset="<?php echo $become->url(); ?>">
-                  <img src="<?php echo $become->url() ?>" alt="">
+                  <img src="<?php echo $become->url() ?>">
                 </picture>
 
               </div>

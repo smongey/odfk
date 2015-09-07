@@ -12,17 +12,17 @@
 
 
     <nav class="menu">
-      <ul class="lang" style="display: none;">
-        <li><a href="#no" class="active">No</a></li>
-        <li><a href="#en">En</a></li>
+      <ul class="lang">
+        <li><a href="<?php echo url() ?>/" <?php if (l::get('more') === 'Les Mer') { echo 'class="active"'; }; ?>>No</a></li>
+        <li><a href="<?php echo url() ?>/en/" <?php if (l::get('more') === 'Read More') { echo 'class="active"'; }; ?>>En</a></li>
       </ul>
       <ul class="nav">
-        <li><a href="#om" class="active">Om ODF</a></li>
-        <li><a href="#nyheter">Nyheter</a></li>
-        <li><a href="#satningsomrader">Satsnings-<br/>omr&aring;der</a></li>
-        <li><a href="#bli-utstiller">Bli utstiller</a></li>
+        <li><a href="#om" class="active"><?php echo l::get('nav-about'); ?></a></li>
+        <li><a href="#nyheter"><?php echo l::get('nav-news'); ?></a></li>
+        <li><a href="#satningsomrader"><?php echo l::get('nav-areas'); ?></a></li>
+        <li><a href="#bli-utstiller"><?php echo l::get('nav-become'); ?></a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#kontaktinfo">Kontaktinfo</a></li>
+        <li><a href="#kontaktinfo"><?php echo l::get('nav-contact'); ?></a></li>
       </ul>
       <div class="close">
         <span></span>
@@ -33,7 +33,7 @@
 
     <div class="cookiemonster loading">
       <div class="full">
-        <p>Ønsker du å stille ut på Oslo Design Fair? Les mer info <a href="https://www.messe.no/no/GaveInterior/ForUtstillere/Standbestilling/" target="_blank">her</a></p>
+        <p><?php echo l::get('cookie'); ?></p>
         <a href="#" class="close">&times;</a>
       </div>
     </div>
@@ -41,6 +41,6 @@
 
     <div id="preloader" class="loading">
       <picture>
-        <img src="<?php echo url() ?>/assets/images/loader.png" alt="Some image">
+        <img src="<?php echo url() ?>/assets/images/loader.png">
       </picture>
     </div>

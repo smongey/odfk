@@ -17,7 +17,7 @@
 
           <div class="full hero hold">
             <h1>Fra august 2015 skifter Gave- &amp; Interiørmessen navn til Oslo Design Fair, Norges viktigste møteplass for design- og interiørbransjen i Norge.</h1>
-            <a href="#" class="more">Les mer <span>&darr;</span></a>
+            <a href="#" class="more"><?php echo l::get('more') ?> <span>&darr;</span></a>
           </div>
 
         </section>

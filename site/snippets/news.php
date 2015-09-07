@@ -16,7 +16,7 @@
 
                 <div class="info">
                   <p><?php echo $entry->title()->html() ?></p>
-                  <span href="#" class="more">Les mer</span>
+                  <span href="#" class="more"><?php echo l::get('more') ?></span>
                 </div>
               </a>
             </div>

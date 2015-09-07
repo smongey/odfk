@@ -1,15 +1,15 @@
 /* jshint devel:true */
 "use strict";
 
-var l = function (honk) { console.log(honk); };
+var l = function (honk) { 
+	//console.log(honk); 
+};
 
 var odf = {
 	$w : $(window),
 	$d : $(document),
 	$b : $('body')
 };
-
-
 
 /*
 1. Interactions
@@ -22,28 +22,20 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 	e.preventDefault();
 	$('.cookiemonster').addClass('hide');
 
-
-// Close menu
 }).on('click', '.hidden', function(){
 
 	$(this).removeClass('hidden');
 	$('.burger').addClass('active');
 
-
-// Open menu
 }).on('click', '.burger', function(){
 
 	odf.animMenuItems(true);
 
-// Close menu
 }).on('click', '.menu .close', function(){
 
 	odf.animMenuItems(false);
 
-
-// Ajax Stuff
 }).on('click', '.profile a, .areas a', function(e){
-
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
 
@@ -52,7 +44,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 		var url = $(this).context.href.split('/'),
 			segment = url[url.length - 1],
 			contents = segment + ' #wrap > *';
-		l(segment);
+		l(contents);
 		$('#wrap > *').addClass('hold');
 		$('html, body').animate({
 			scrollTop: 0
@@ -100,9 +92,19 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 		e.preventDefault();
 		if ( $('section.article').length > 0 ) {
 
+
 			var url = $(this).context.href.split('#'),
-				anchor = url[url.length - 1];
+				anchor = url[url.length - 1],
 				hash = '#' + anchor;
+			
+			if(window.location.pathname.indexOf('/en/') == 0) {
+				var site = window.location.origin + '/en/';
+				console.log('first');
+			} else {
+				var site = window.location.origin;
+				console.log('second');
+			}
+			
 			l(anchor);
 			
 			$('#wrap > *').addClass('hold');
@@ -115,12 +117,12 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 			setTimeout(function(){
 		    	$('header').addClass('hidden');
 				$('#wrap > *').remove();
-				$('#wrap').load('/ #wrap > *', function(){
+				$('#wrap').load(site + ' #wrap > *', function(){
 					odf.fadeInSeq();
 					initMap();
 					l($(hash));
 					setTimeout(function(){
-						history.pushState({}, '', '/');
+						history.pushState({}, '', site);
 						$('html, body').animate({
 							scrollTop: $(hash).offset().top
 						}, 1500, 'easeInOutQuint');
@@ -188,7 +190,6 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 	// $.post( request, $('form#mailinglist').serialize(), function(data) {
 	// 	console.log(data);
 	// }, 'json' );
-
 });
 
 
@@ -197,15 +198,7 @@ B. Load
 */
 odf.$w.load(function(){
 
-	l(window.location.pathname);
-
-	if ( window.location.pathname.indexOf("/news/") == 0 ||  window.location.pathname.indexOf("/nyheter/") == 0) {
-		l('does');
-	} else {
-		l('doesnt');
-	}
-
-	if(window.location.pathname === "/" || window.location.pathname.indexOf("/news/") == 0 || window.location.pathname.indexOf("/nyheter/") == 0 || window.location.pathname.indexOf("/areas/") == 0 || window.location.pathname.indexOf("/satsningsomraader/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
+	if(window.location.pathname === "/" || window.location.pathname.indexOf("/en/news/") == 0 || window.location.pathname.indexOf("/nyheter/") == 0 || window.location.pathname.indexOf("/en/areas/") == 0 || window.location.pathname.indexOf("/satsningsomraader/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			
