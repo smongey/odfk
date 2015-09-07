@@ -67,13 +67,21 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
 		e.preventDefault();
-		var contents = '/ #wrap > *';
+		
+		if(window.location.pathname.indexOf('/en/') == 0) {
+			var site = window.location.origin + '/en/';
+		} else {
+			var site = window.location.origin;
+		}
+		
+		var contents = site + ' #wrap > *';
 		l(contents);
+		
 		$('#wrap > *').addClass('hold');
 		$('html, body').animate({
 			scrollTop: 0
 		}, 1000, 'easeInOutQuint');
-		history.pushState({}, '', '/');
+		history.pushState({}, '', site);
 		setTimeout(function(){
 	    	$('header').addClass('hidden');
 			$('#wrap > *').remove();
@@ -99,10 +107,8 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 			
 			if(window.location.pathname.indexOf('/en/') == 0) {
 				var site = window.location.origin + '/en/';
-				console.log('first');
 			} else {
 				var site = window.location.origin;
-				console.log('second');
 			}
 			
 			l(anchor);

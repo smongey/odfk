@@ -1,6 +1,6 @@
     <header class="hidden loading">
       <div class="main full">
-        <a href="<?php echo url() ?>" class="logo">ODF</a>
+        <a href="<?php echo url() ?><?php if (l::get('more') === 'Read More') { echo '/en/'; }; ?>" class="logo">ODF</a>
       </div>
       <div class="burger">
         <span></span>
