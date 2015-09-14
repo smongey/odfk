@@ -113,7 +113,8 @@
             <div class="exhibit">
               <div class="info">
                 <h3><?php echo $page->becometext(); ?></h3>
-                <a href="<?php echo $page->becomelink(); ?>" target="_blank" class="become"><?php echo l::get('title-become') ?> <span>&rarr;</span></a>
+                <a href="<?php echo $page->becomelink(); ?>" target="_blank" class="become for"><?php echo l::get('title-become'); ?> <span>&rarr;</span></a>
+                <a href="<?php echo $page->forlink(); ?>" target="_blank" class="become"><?php echo l::get('title-for'); ?> <span>&rarr;</span></a>
               </div>
               <div class="image">
 

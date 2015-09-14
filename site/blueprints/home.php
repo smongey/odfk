@@ -70,6 +70,10 @@ fields:
     label: Become Exhibitor Link
     type: text
 
+  forlink:
+    label: For Exhibitor Link
+    type: text
+
   team:
     label: Team
     type: structure

@@ -12,6 +12,7 @@ l::set('title-about', 'About Oslo<br/>Design Fair');
 l::set('title-news', 'Latest News');
 l::set('title-areas', 'Focus Areas');
 l::set('title-become', 'Become an Exhibitor');
+l::set('title-for', 'For Exhibitors');
 l::set('title-visitor', 'Contact<br/>information');
 
 l::set('email', 'email');
