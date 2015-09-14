@@ -35,7 +35,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 
 	odf.animMenuItems(false);
 
-}).on('click', '.profile a, .areas a', function(e){
+}).on('click', '.profile a, .areas a, .about a', function(e){
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
 
@@ -204,7 +204,7 @@ B. Load
 */
 odf.$w.load(function(){
 
-	if(window.location.pathname === "/" || window.location.pathname.indexOf("/en/news/") == 0 || window.location.pathname.indexOf("/nyheter/") == 0 || window.location.pathname.indexOf("/en/areas/") == 0 || window.location.pathname.indexOf("/satsningsomraader/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/") {
+	if(window.location.pathname === "/" || window.location.pathname.indexOf("/en/news/") == 0 || window.location.pathname.indexOf("/nyheter/") == 0 || window.location.pathname.indexOf("/en/areas/") == 0 || window.location.pathname.indexOf("/satsningsomraader/") == 0 || window.location.pathname === "/en/" || window.location.pathname === "/en" || window.location.pathname === "/odf/"  || window.location.pathname.indexOf("/en/about") == 0 || window.location.pathname.indexOf("/om-odf") == 0) {
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			
@@ -341,13 +341,6 @@ odf.animMenuItems = function(what) {
 	if( what === true) {
 
 		$('.menu').addClass('open');
-
-		$(".lang li").each(function(i,el) {
-		    var $this = $(this);
-		    setTimeout(function() {
-		        $this.addClass('loadin');
-		    }, i*50); // milliseconds
-		});
 
 		$(".nav li").each(function(i,el) {
 		    var $this = $(this);

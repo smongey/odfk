@@ -9,6 +9,12 @@
             <div class="sixth hold">
               <p class="details">28.01<span>&rarr;</span>31.01,<br/>2016. <?php echo l::get('trade-fairs'); ?></p>
             </div>
+            <div class="multi hold">
+              <ul class="lang">
+                <li><a href="<?php echo url() ?>/" <?php if (l::get('more') === 'Les Mer') { echo 'class="active"'; }; ?>>No</a></li>
+                <li><a href="<?php echo url() ?>/en/" <?php if (l::get('more') === 'Read More') { echo 'class="active"'; }; ?>>En</a></li>
+              </ul>
+            </div>
             <div class="burger hold">
               <span></span>
               <span></span>
@@ -23,7 +29,6 @@
 
         </section>
 
-
         <section class="about scroll-section" id="om">
           <div class="full text">
             <div class="half anim">
@@ -31,7 +36,8 @@
             </div>
 
             <div class="half anim">
-            	<?php echo $page->about()->kirbytext(); ?>  
+            	<?php echo $page->about()->kirbytext(); ?> 
+              <a href="<?php echo url() ?>/<?php if (l::get('more') === 'Les Mer') { echo 'om-odf'; } else { echo 'en/about'; }; ?>" class="more"><?php echo l::get('more') ?> <span>&rarr;</span></a>
             </div>
           
           </div>

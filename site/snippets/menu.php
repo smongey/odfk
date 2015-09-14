@@ -12,10 +12,6 @@
 
 
     <nav class="menu">
-      <ul class="lang">
-        <li><a href="<?php echo url() ?>/" <?php if (l::get('more') === 'Les Mer') { echo 'class="active"'; }; ?>>No</a></li>
-        <li><a href="<?php echo url() ?>/en/" <?php if (l::get('more') === 'Read More') { echo 'class="active"'; }; ?>>En</a></li>
-      </ul>
       <ul class="nav">
         <li><a href="#om" class="active"><?php echo l::get('nav-about'); ?></a></li>
         <li><a href="#nyheter"><?php echo l::get('nav-news'); ?></a></li>
