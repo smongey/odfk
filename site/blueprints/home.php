@@ -100,4 +100,4 @@ fields:
         type: tel
       email:
         label: Email
-        type: email
+        type: text
