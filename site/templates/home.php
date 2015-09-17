@@ -150,7 +150,10 @@
                 <p><?php echo $person["name"] ?><br/>
                 <?php echo $person["role"] ?></p>
                 <a href="tel:<?php echo $person["phone"] ?>"><?php echo $person["phone"] ?></a><br/> 
-                <a href="mailto:<?php echo $person["email"] ?>"><?php echo $person["email"] ?></a>
+                <script>
+                var email = "<?php echo $person['email']; ?>";
+                document.write("<a href='" + email + '@' + 'oslodesignfair.no' + "'>" + email + '@' + 'oslodesignfair.no' + "</a>");
+                </script>
                 </p>
               </div>
               <div class="image">

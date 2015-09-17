@@ -29,7 +29,7 @@
           <div class="full hold">
             <div class="text">
     		      <?php echo $page->text()->kirbytext() ?>
-    		      <a href="#" class="front"><span>&larr;</span> <?php echo l::get('more') ?></a>
+    		      <a href="#" class="front"><span>&larr;</span> <?php echo l::get('to-front') ?></a>
             </div>
           </div>
 
