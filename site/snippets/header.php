@@ -33,6 +33,14 @@
 
     <?php echo css('assets/css/main.css') ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        var pre = (("https:" == document.location.protocol) ? "https://secure." : "http://ib.");
+        var url = pre + "adnxs.com/seg?add=4177086&t=2";
+        var img = document.createElement("img"); img.src = url; img.width = 1; img.height = 1;
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(img, s);
+    })();
+    </script>
 
   </head>
   <body>
