@@ -12,9 +12,9 @@
 
             <div class="sixth links hold">
               <p class="details">
-              <a href="<?php echo l::get('visitors-link') ?>"><?php echo l::get('visitors') ?></a><br/>
-              <a href="<?php echo l::get('exhibitors-link') ?>"><?php echo l::get('exhibitors') ?></a><br/>
-              <a href="<?php echo l::get('press-link') ?>"><?php echo l::get('press') ?></a></p>
+              <a href="<?php echo l::get('visitors-link') ?>" target="_blank"><?php echo l::get('visitors') ?></a><br/>
+              <a href="<?php echo l::get('exhibitors-link') ?>" target="_blank"><?php echo l::get('exhibitors') ?></a><br/>
+              <a href="<?php echo l::get('press-link') ?>" target="_blank"><?php echo l::get('press') ?></a></p>
             </div>
             
             <div class="multi hold">
