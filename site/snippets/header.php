@@ -31,7 +31,8 @@
     <meta name="msapplication-TileImage" content="/assets/images/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <?php echo css('assets/css/main.css') ?>
+    <?php snippet('scss') ?>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script type="text/javascript">
     (function() {

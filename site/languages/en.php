@@ -28,4 +28,11 @@ l::set('trade-fairs-address', 'PO Box 75, <br/>NO-2001, Lillestrøm<br/>Norway')
 
 l::set('cookie', 'Do you wish to visit Oslo Design Fair? See more info <a href="https://www.messe.no/no/OsloDesignFair/Besokende/" target="_blank">here</a>');
 
+l::set('visitors', '&rarr; For visitors');
+l::set('visitors-link', 'https://www.messe.no/no/OsloDesignFair/Besokende/');
+l::set('exhibitors', '&rarr; For exhibitors');
+l::set('exhibitors-link', 'https://www.messe.no/en/OsloDesignFair/For-exhibitors/ ');
+l::set('press', '&rarr; For press');
+l::set('press-link', 'https://www.messe.no/no/OsloDesignFair/For-presse/');
+
 ?>

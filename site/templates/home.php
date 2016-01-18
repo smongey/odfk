@@ -9,6 +9,14 @@
             <div class="sixth hold">
               <p class="details">28.01<span>&rarr;</span>31.01,<br/>2016. <?php echo l::get('trade-fairs'); ?></p>
             </div>
+
+            <div class="sixth links hold">
+              <p class="details">
+              <a href="<?php echo l::get('visitors-link') ?>"><?php echo l::get('visitors') ?></a><br/>
+              <a href="<?php echo l::get('exhibitors-link') ?>"><?php echo l::get('exhibitors') ?></a><br/>
+              <a href="<?php echo l::get('press-link') ?>"><?php echo l::get('press') ?></a></p>
+            </div>
+            
             <div class="multi hold">
               <ul class="lang">
                 <li><a href="<?php echo url() ?>/" <?php if (l::get('more') === 'Les Mer') { echo 'class="active"'; }; ?>>No</a></li>

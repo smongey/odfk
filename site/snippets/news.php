@@ -1,4 +1,4 @@
-            <?php foreach(page('nyheter')->children()->visible()->limit(4) as $entry): ?>
+            <?php foreach(page('nyheter')->children()->visible()->limit(8) as $entry): ?>
             <div class="half profile anim">
               <a href="<?php echo $entry->url() ?>">
 
