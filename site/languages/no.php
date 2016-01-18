@@ -26,6 +26,6 @@ l::set('code', 'Kode');
 l::set('trade-fairs', 'Norges<br/>Varemesse');
 l::set('trade-fairs-address', 'Postboks 75, 2001 Lillestrøm');
 
-l::set('cookie', 'Ønsker du å stille ut på Oslo Design Fair? Les mer info <a href="https://www.messe.no/no/OsloDesignFair/ForUtstillere/Standbestilling/" target="_blank">her</a>');
+l::set('cookie', 'Ønsker du å besøke Oslo Design Fair? Les mer info  <a href="https://www.messe.no/no/OsloDesignFair/Besokende/" target="_blank">her</a>');
 
 ?>

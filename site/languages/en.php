@@ -26,6 +26,6 @@ l::set('code', 'Code');
 l::set('trade-fairs', 'Norway<br/>Trade Fairs');
 l::set('trade-fairs-address', 'PO Box 75, <br/>NO-2001, Lillestrøm<br/>Norway');
 
-l::set('cookie', 'Would you like to be an exhibitor at the Oslo Design Fair? Read more <a href="https://www.messe.no/en/OsloDesignFair/For-exhibitors/Stand-order/ " target="_blank">here</a>');
+l::set('cookie', 'Do you wish to visit Oslo Design Fair? See more info <a href="https://www.messe.no/no/OsloDesignFair/Besokende/" target="_blank">here</a>');
 
 ?>
