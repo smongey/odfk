@@ -23,6 +23,7 @@
                 <li><a href="<?php echo url() ?>/en/" <?php if (l::get('more') === 'Read More') { echo 'class="active"'; }; ?>>En</a></li>
               </ul>
             </div>
+            
             <div class="burger hold">
               <span></span>
               <span></span>

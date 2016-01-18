@@ -354,6 +354,11 @@ header {
     }
   }
 
+  .multi {
+    display: none;
+  }
+
+
 }
 
 
@@ -455,39 +460,6 @@ header {
   .links {
     width: calc(100% / 4);
   }
-  .multi {
-    position: absolute;
-    right: 9%;
-    top: 62px;
-    z-index: 9999;
-    transition: all $cubic .6s;
-    ul.lang {
-      li {
-        display: inline-block;
-        opacity: 1;
-        position: relative;
-        margin-right: 5px;
-        transition: all .2s ease .1s;
-      }
-      li a {
-        color: white;
-        
-      }
-      li:after {
-        background: transparent;
-      }
-      .active:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: white;
-        left: 0px;
-        bottom:-1px;
-      }
-    }
-  }
-
 
   .hero {
     position: absolute;
@@ -545,6 +517,39 @@ header {
 
 }
 
+.multi {
+  position: absolute;
+  right: 9%;
+  top: 62px;
+  z-index: 9999;
+  transition: all $cubic .6s;
+  ul.lang {
+    li {
+      display: inline-block;
+      opacity: 1;
+      position: relative;
+      margin-right: 5px;
+      transition: all .2s ease .1s;
+    }
+    li a {
+      color: white;
+      
+    }
+    li:after {
+      background: transparent;
+    }
+    .active:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: white;
+      left: 0px;
+      bottom:-1px;
+    }
+  }
+}
+
 .about {
   background: white;
   position: relative;
@@ -566,6 +571,9 @@ header {
   .full {
     margin-bottom: $vertical;
   }
+  .third {
+    margin-bottom: $vertical / 2;
+  }
   .profile {
     background: $slate;
     color: white;
@@ -584,9 +592,6 @@ header {
     }
     img {
       transition: all ease .2s;
-    }
-    &:last-child, &:nth-last-child(2) {
-      margin-bottom: 0;
     }
     a {
       display: block;
@@ -1053,6 +1058,14 @@ input, ul, li {
       top: 20px;
       right: 20px;
     }
+    .multi {
+      display: block;
+      right: initial;
+      top: initial;
+      a {
+        color: white;
+      }
+    }
   }
 
 
@@ -1060,7 +1073,7 @@ input, ul, li {
     font: 15px/22px $oslo;  
   }
 
-  .details, .links {
+  .details {
     display: none;
   }
   section {
@@ -1079,10 +1092,25 @@ input, ul, li {
     padding-top: $vertical / 4;
   }
 
-
-  .multi {
-    top: 35px;
-    right: 60px;
+  .sixth:first-child { 
+    width: 35%;
+  }
+  .intro {
+    .multi {
+      display: none;
+      top: 35px;
+      right: 60px;
+    }
+    .links {
+      width: calc(100% / 2);
+      .details {
+        display: block;
+        a {
+          font-size: 19px;
+          white-space: nowrap;
+        }
+      }
+    }
   }
 
   .hero {
@@ -1319,11 +1347,21 @@ input, ul, li {
       right: $vertical / 3;
       top: $vertical / 3;
     }
+    .multi {
+      display: none;
+    }
   }
 
   .intro {
     padding-top: $vertical / 2;
+    .sixth:first-child {
+      width: calc(100% / 6);
+    }
+    .sixth {
+      width: calc(100% / 4);
+    }
   }
+
   .multi {
     right: 13%;
   }
@@ -1348,12 +1386,13 @@ input, ul, li {
     }
   }
   
-  .third {
-    
-  }
-
-  .details {
-    display: none;
+  .third.profile {
+    width: calc(100% / 2 - 15px);
+    margin-right: $vertical / 4;
+    margin-bottom: $vertical / 4;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .text {
@@ -1627,8 +1666,6 @@ input, ul, li {
     }
   }
 
-
-
 }
 
 
@@ -1687,6 +1724,7 @@ input, ul, li {
 .mobile {
   //  background: yellow !important;
 }
+
 
 
 // Transition In / Out

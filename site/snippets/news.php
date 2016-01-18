@@ -1,5 +1,5 @@
             <?php foreach(page('nyheter')->children()->visible()->limit(8) as $entry): ?>
-            <div class="half profile anim">
+            <div class="third profile anim">
               <a href="<?php echo $entry->url() ?>">
 
                 <picture>
