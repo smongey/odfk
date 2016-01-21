@@ -9,7 +9,7 @@
                 <ul>
                   <li>Oslo<br/>Design Fair</li>
                   <li><?php echo l::get('trade-fairs-address'); ?></li>
-                  <li>+47 66 93 91 00</li>
+                  <!-- <li>+47 66 93 91 00</li> -->
                   <li><a href="mailto:post@oslodesignfair.no">Send <?php echo l::get('email'); ?></a></li>
                 </ul>
               </div>
@@ -17,7 +17,7 @@
                 <ul>
                   <li><?php echo l::get('trade-fairs'); ?></li>
                   <li><?php echo l::get('trade-fairs-address'); ?></li>
-                  <li>+47 66 93 91 00</li>
+                  <!-- <li>+47 66 93 91 00</li> -->
                   <li><a href="mailto:sl@messe.no">Send <?php echo l::get('email'); ?></a></li>
                 </ul>
               </div>
