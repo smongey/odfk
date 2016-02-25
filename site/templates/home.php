@@ -7,7 +7,7 @@
               <a href="#" class="logo">Oslo<br/>Design<br/>Fair</a>
             </div>
             <div class="sixth hold">
-              <p class="details">28.01<span>&rarr;</span>31.01,<br/>2016. <?php echo l::get('trade-fairs'); ?></p>
+              <p class="details">01.09<span>&rarr;</span>04.09,<br/>2016. <?php echo l::get('trade-fairs'); ?></p>
             </div>
 
             <div class="sixth links hold">
