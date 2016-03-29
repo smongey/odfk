@@ -1,0 +1,13 @@
+Title: Another
+
+----
+
+Thumbnail: 600.jpg
+
+----
+
+Text: Some text here
+
+----
+
+Entrydate: 26.08.2015

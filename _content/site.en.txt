@@ -1,0 +1,17 @@
+Title: Oslo Design Fair
+
+----
+
+Author: Seán Mongey
+
+----
+
+Description: Text for google listing description
+
+----
+
+Keywords: Oslo,Design,Fair
+
+----
+
+Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)

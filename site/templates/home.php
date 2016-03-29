@@ -124,35 +124,6 @@
           </div>
         </section>
 
-<!--         <section class="exhibitor scroll-section"  id="bli-utstiller">
-          <div class="full anim">
-            <h2><?php echo l::get('title-become') ?></h2>
-          </div>
-          <div class="full anim">
-            <div class="exhibit">
-              <div class="info">
-                <h3><?php echo $page->becometext(); ?></h3>
-                <a href="<?php echo $page->becomelink(); ?>" target="_blank" class="become for"><?php echo l::get('title-become'); ?> <span>&rarr;</span></a>
-                <a href="<?php echo $page->forlink(); ?>" target="_blank" class="become"><?php echo l::get('title-for'); ?> <span>&rarr;</span></a>
-              </div>
-              <div class="image">
-
-                <picture>
-                <?php $become = $page->image($page->becomepic());
-                $small = thumb($page->image($page->becomepic()), array('width' => 480));
-                $medium = thumb($page->image($page->becomepic()), array('width' => 900)); ?>
-                  <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $medium->url(); ?> 2x">
-                  <source media="(max-width: 800px)" srcset="<?php echo $medium->url(); ?>">
-                  <source media="(max-width: 1200px)" srcset="<?php echo $become->url(); ?>">
-                  <img src="<?php echo $become->url() ?>">
-                </picture>
-
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-
         <section class="team scroll-section" id="team">
           
           <div class="full anim">

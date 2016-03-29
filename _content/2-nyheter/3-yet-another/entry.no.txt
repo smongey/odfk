@@ -1,0 +1,13 @@
+Title: Yet Another
+
+----
+
+Thumbnail: 600.jpg
+
+----
+
+Entrydate: 26.08.2015
+
+----
+
+Text: some other text
