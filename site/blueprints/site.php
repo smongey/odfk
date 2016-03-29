@@ -18,3 +18,6 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+  popupbanner:
+    label: Bottom Banner
+    type:  textarea

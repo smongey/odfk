@@ -22,7 +22,8 @@
         <li><a href="#om" class="active"><?php echo l::get('nav-about'); ?></a></li>
         <li><a href="#nyheter"><?php echo l::get('nav-news'); ?></a></li>
         <li><a href="#satningsomrader"><?php echo l::get('nav-areas'); ?></a></li>
-        <li><a href="#bli-utstiller"><?php echo l::get('nav-become'); ?></a></li>
+        <!-- <li><a href="#bli-utstiller"><?php echo l::get('nav-become'); ?></a></li> -->
+        <li><a href="#info"><?php echo l::get('nav-info'); ?></a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#kontaktinfo"><?php echo l::get('nav-contact'); ?></a></li>
       </ul>
@@ -35,7 +36,7 @@
 
     <div class="cookiemonster loading">
       <div class="full">
-        <p><?php echo l::get('cookie'); ?></p>
+        <?php echo $site->popupbanner()->kirbytext(); ?>
         <a href="#" class="close">&times;</a>
       </div>
     </div>

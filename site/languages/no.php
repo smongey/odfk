@@ -7,6 +7,8 @@ l::set('nav-news', 'Nyheter');
 l::set('nav-areas', 'Satsnings-<br/>områder');
 l::set('nav-become', 'Bli utstiller');
 l::set('nav-contact', 'Kontaktinfo');
+l::set('nav-info', 'Praktisk info');
+
 
 l::set('title-about', 'Om Oslo<br/>Design Fair');
 l::set('title-news', 'Siste nyheter');

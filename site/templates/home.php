@@ -113,8 +113,18 @@
           </div>
         </section>
 
+        <section class="areas scroll-section" id="info">
+          <div class="full anim">
+            <h2><?php echo l::get('nav-info') ?></h2>
+          </div>
+          <div class="full">
 
-        <section class="exhibitor scroll-section"  id="bli-utstiller">
+            <?php snippet('info') ?>
+
+          </div>
+        </section>
+
+<!--         <section class="exhibitor scroll-section"  id="bli-utstiller">
           <div class="full anim">
             <h2><?php echo l::get('title-become') ?></h2>
           </div>
@@ -140,7 +150,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
 
         <section class="team scroll-section" id="team">
