@@ -2,7 +2,7 @@
 "use strict";
 
 var l = function (honk) { 
-	//console.log(honk); 
+	console.log(honk); 
 };
 
 var odf = {
@@ -35,7 +35,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 
 	odf.animMenuItems(false);
 
-}).on('click', '.profile a, .areas a, .about a', function(e){
+}).on('click', '.profile a, .areas a, .about a, a.info', function(e){
 
 	if(!$('html').is('.ie6, .ie7, .ie8, .ie9')) {
 
@@ -202,7 +202,7 @@ odf.$b.on('click', '.cookiemonster a.close', function(e){
 B. Load
 */
 odf.$w.load(function(){
-
+	
 	if( window.location.pathname === "/" || 
 		window.location.pathname.indexOf("/en/info/") == 0 || 
 		window.location.pathname.indexOf("/info/") == 0 ||
@@ -214,7 +214,8 @@ odf.$w.load(function(){
 		window.location.pathname === "/en" || 
 		window.location.pathname === "/odf/" || 
 		window.location.pathname.indexOf("/en/about") == 0 || 
-		window.location.pathname.indexOf("/om-odf") == 0) {
+		window.location.pathname.indexOf("/om-odf") == 0 || 
+		window.location.pathname.indexOf("/info") == 0) {
 
 		setTimeout(function(){
 			$('#preloader').addClass('out');			

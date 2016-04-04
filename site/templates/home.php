@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
 		<?php $img = $page->image($page->mainpic()); ?>
         <section class="intro" style="background-image: url('<?php echo $img->url(); ?>');">
           <div class="full">
@@ -115,7 +114,11 @@
 
         <section class="areas scroll-section" id="info">
           <div class="full anim">
-            <h2><?php echo l::get('nav-info') ?></h2>
+            <a href="<?php echo url() ?>/info">
+              <h2>
+                <?php echo l::get('nav-info') ?>
+              </h2>
+            </a>
           </div>
           <div class="full">
 

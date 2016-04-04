@@ -2,7 +2,7 @@
 
 title: Info
 pages:
-  template: entry
+  template: item
 files: false
 fields:
   title:
