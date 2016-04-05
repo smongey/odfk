@@ -26,11 +26,11 @@
         </section>
 
 
-        <section class="areas" id="info">
+        <section class="news" id="info">
           <div class="full">
 
             <?php foreach(page('info')->children()->visible()->limit(30) as $area): ?>
-            <div class="third anim">
+            <div class="third profile anim">
               <a href="<?php echo $area->url() ?>">
 
                 <picture>
