@@ -1,9 +1,9 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Item
-pages: false
-files:
-  sortable: true
+pages:
+  template: subitem
+files: true
 fields:
   title:
     label: Title
@@ -14,11 +14,3 @@ fields:
     options: images
     width: 1/2
     help: 760x760
-  entrydate:
-    label: Date
-    type:  text
-    width: 1/2
-    help: DD.MM.YYYY
-  text:
-    label: Text
-    type:  textarea

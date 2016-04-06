@@ -1,6 +1,5 @@
 <?php snippet('header') ?>
 
-
         <section class="intro inverse">
           <div class="full">
             <div class="sixth hold">
@@ -18,26 +17,44 @@
 
         </section>
 
-        <section class="article">
+        <section class="article info">
           <div class="full hold">
             <div class="title">
                 <h1><?php echo $page->title()->html() ?></h1>
-                <span class="date"><?php echo $page->entrydate()->html() ?></span>
             </div>
           </div>
-
-          <div class="full hold anim">
-            <div class="text">
-    		      <?php echo $page->text()->kirbytext() ?>
-    		      <a href="<?php echo url() ?>/info" class="info"><span>&larr;</span></a>
-            </div>
-          </div>
-
         </section>
 
-      
 
-<?php snippet('contact') ?>
+        <section class="news" id="info">
+          <div class="full">
+
+            <?php foreach($page->children()->visible()->limit(30) as $area): ?>
+            <div class="third profile anim">
+              <a href="<?php echo $area->url() ?>">
+
+                <picture>
+                  <?php $i = $area->image($area->thumbnail());
+                  $small = thumb($i, array('width' => 400));
+                  $medium = thumb($i, array('width' => 700));
+                  ?>
+                  <source media="(max-width: 480px)" srcset="<?php echo $small->url() ?> 1x, <?php echo $medium->url() ?> 2x">
+                  <source media="(max-width: 900px)" srcset="<?php echo $medium->url() ?>">
+                  <img src="<?php echo $i->url() ?>" alt="<?php echo $area->title()->html() ?>">
+                </picture>
+
+                <div class="info">
+                  <p><?php echo $area->title()->html() ?></p>
+                  <span href="#" class="more"><?php echo l::get('more') ?></span>
+                </div>
+              </a>
+            </div>
+            <?php endforeach ?>
+
+
+
+          </div>
+        </section>
 
 
 <?php snippet('footer') ?>

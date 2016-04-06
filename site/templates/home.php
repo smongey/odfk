@@ -114,11 +114,9 @@
 
         <section class="areas scroll-section" id="info">
           <div class="full anim">
-            <a href="<?php echo url() ?>/info">
-              <h2>
-                <?php echo l::get('nav-info') ?>
-              </h2>
-            </a>
+            <h2>
+              <?php echo l::get('nav-info') ?>
+            </h2>
           </div>
           <div class="full">
 
