@@ -42,8 +42,8 @@
     </div>
 
 
-    <div id="preloader" class="loading">
+<!--     <div id="preloader" class="loading">
       <picture>
         <img src="<?php echo url() ?>/assets/images/loader.png">
       </picture>
-    </div>
+    </div> -->

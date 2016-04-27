@@ -50,20 +50,26 @@
           
           </div>
           <div class="full images">
-            <div class="half anim">
-      			<?php $img = $page->image($page->aboutpic1());
-      			$small = thumb($page->image($page->aboutpic1()), array('width' => 480)); ?>
-              <picture>
-                <source media="(max-width: 480px)"
-                srcset="<?php echo $small->url(); ?> 1x, <?php echo $img->url(); ?> 2x">
-                <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
-                <img src="<?php echo $img->url(); ?>" alt="">
-              </picture>
+          <?php if($page->aboutpic1() != ''): ?>
 
-            </div>
+              <div class="half anim">
+              <?php 
+              $img = $page->image($page->aboutpic1());
+              $small = thumb($page->image($page->aboutpic1()), array('width' => 480)); ?>
+                <picture>
+                  <source media="(max-width: 480px)"
+                  srcset="<?php echo $small->url(); ?> 1x, <?php echo $img->url(); ?> 2x">
+                  <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
+                  <img src="<?php echo $img->url(); ?>" alt="">
+                </picture>
+              </div>                
+
+          <?php endif; ?>
+          <?php if($page->aboutpic2() != ''): ?>
 
             <div class="half anim">
-        			<?php $img = $page->image($page->aboutpic2());
+      			<?php 
+            $img = $page->image($page->aboutpic2());
             $small = thumb($page->image($page->aboutpic2()), array('width' => 480)); ?>
               <picture>
                 <source media="(max-width: 480px)" srcset="<?php echo $small->url(); ?> 1x, <?php echo $img->url(); ?> 2x">
@@ -72,9 +78,13 @@
               </picture>
 
             </div>
+          <?php endif; ?>
 
+     
+          <?php if($page->aboutpic3() != ''): ?>    
             
-            <?php $img = $page->image($page->aboutpic3());
+            <?php 
+            $img = $page->image($page->aboutpic3());
             $small = thumb($page->image($page->aboutpic3()), array('width' => 480,'height' => 480, 'crop' => true));
             $medium = thumb($page->image($page->aboutpic3()), array('width' => 900,'height' => 900, 'crop' => true)); ?>
             <picture>
@@ -83,6 +93,8 @@
               <source media="(max-width: 1200px)" srcset="<?php echo $img->url(); ?>">
               <img class="anim" src="<?php echo $img->url(); ?>">
             </picture>
+
+          <?php endif; ?>
 
           </div>
 
