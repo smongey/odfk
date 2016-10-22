@@ -24,6 +24,7 @@ l::set('follow', 'Follow us on');
 l::set('to-front', 'Home');
 l::set('code', 'Code');
 
+l::set('dates', '25→28 January<br/>2017. Norway<br/>Trade Fairs');
 l::set('trade-fairs', 'Norway<br/>Trade Fairs');
 l::set('trade-fairs-address', 'PO Box 75, <br/>NO-2001, Lillestrøm<br/>Norway');
 

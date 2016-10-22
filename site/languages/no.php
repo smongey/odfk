@@ -9,7 +9,6 @@ l::set('nav-become', 'Bli utstiller');
 l::set('nav-contact', 'Kontaktinfo');
 l::set('nav-info', 'Praktisk info');
 
-
 l::set('title-about', 'Om Oslo<br/>Design Fair');
 l::set('title-news', 'Siste nyheter');
 l::set('title-areas', 'Satsningsområder');
@@ -25,6 +24,7 @@ l::set('follow', 'Følg oss');
 l::set('to-front', 'Til Forsiden');
 l::set('code', 'Kode');
 
+l::set('dates', '25→28 Januar<br/>2017. Norges<br/>Varemesse');
 l::set('trade-fairs', 'Norges<br/>Varemesse');
 l::set('trade-fairs-address', 'Postboks 75, 2001 Lillestrøm');
 
