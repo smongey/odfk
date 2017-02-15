@@ -24,7 +24,7 @@ l::set('follow', 'Følg oss');
 l::set('to-front', 'Til Forsiden');
 l::set('code', 'Kode');
 
-l::set('dates', '25→28 Januar<br/>2017. Norges<br/>Varemesse');
+l::set('dates', '30 August →<br/>2 September<br/>2017. Norges<br/>Varemesse');
 l::set('trade-fairs', 'Norges<br/>Varemesse');
 l::set('trade-fairs-address', 'Postboks 75, 2001 Lillestrøm');
 
